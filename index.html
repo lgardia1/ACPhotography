@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACP Phtography</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+  </head>
+  <body>
+    <!-- NAV -->
+    <header>
+      <div class="container-navbar">
+        <a href="index.html" class="brand-link-navbar" aria-label="home">
+          <img
+            src="./assets/img/logo.png"
+            loading="lazy"
+            alt="ACP Phtography"
+            class="brand-navbar"
+          />
+        </a>
+        <div class="right__nav large-nav" id="nav">
+          <nav class="navigation">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#">Inicio</a></li>
+              <li class="nav__item"><a href="#about">Sobre Nosotros</a></li>
+              <li class="nav__item"><a href="#services">Servicios</a></li>
+              <li class="nav__item"><a href="#gallery">Galería</a></li>
+            </ul>
+            <div class="nav__button">
+              <div class="divider-nav"></div>
+              <a href="#contact" class="button button-primary">Contáctanos</a>
+            </div>
+          </nav>
+        </div>
+        <div class="burger" id="burger-nav-icon">
+          <div class="lin1"></div>
+          <div class="lin2"></div>
+          <div class="lin3"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SIDEBAR -->
+    <div class="overlay" id="overlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+      <div class="cross-icon" id="crossNavMobile">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </div>
+
+      <nav>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#">Inicio</a></li>
+          <li class="nav__item"><a href="#about">Sobre Nosotros</a></li>
+          <li class="nav__item"><a href="#services">Servicios</a></li>
+          <li class="nav__item"><a href="#gallery">Galería</a></li>
+        </ul>
+        <div class="nav__button">
+          <a href="#contact" class="button button-primary">Contáctanos</a>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero__overlay"></div>
+        <div class="hero__container">
+          <div class="hero__title">
+            <h1 class="mega-h1">
+              Capturando momentos, <br />
+              creando arte
+            </h1>
+            <p class="paragraph-big">
+              Fotografía de <span class="bold">paisajes</span> y destinos
+              <span class="bold">turísticos</span> que inspiran
+            </p>
+            <div class="hero__buttons">
+              <a href="#galeria" class="button button-primary">
+                Galería
+                <i style="margin-left: 0.4rem" class="fa-solid fa-images"></i>
+              </a>
+              <a href="#contact" class="button button-secondary">
+                Contáctanos
+                <i style="margin-left: 0.4rem" class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="about section">
+        <div class="about__container">
+          <h2 class="section-subtitle">Sobre Nosotros</h2>
+          <h1 class="section-title">Descubre nuestro arte</h1>
+
+          <div class="about__block reverse">
+            <div class="about__image">
+              <img
+                src="./assets/img/about-1.jpg"
+                alt="Fotografía de paisajes de España"
+                loading="lazy"
+              />
+            </div>
+            <div class="about__text">
+              <p class="about__paragraph">
+                En <span class="bold">ACPhotography</span>, nos apasiona
+                capturar la belleza de los rincones más impresionantes de
+                España. Con más de
+                <span class="bold">10 años de experiencia</span>, hemos
+                recorrido desde las montañas del norte hasta las playas del sur,
+                creando imágenes que inspiran y emocionan.
+              </p>
+            </div>
+          </div>
+
+          <div class="about__block">
+            <div class="about__image">
+              <img
+                src="./assets/img/about-2.jpg"
+                alt="Fotografía de destinos turísticos de España"
+                loading="lazy"
+              />
+            </div>
+            <div class="about__text">
+              <p class="about__paragraph">
+                Nuestro enfoque se centra en la fotografía de
+                <span class="bold">paisajes naturales</span> y
+                <span class="bold">destinos turísticos</span> de España. Desde
+                los majestuosos Picos de Europa hasta las playas cristalinas de
+                las Islas Baleares, cada foto cuenta una historia única y
+                refleja la esencia de cada lugar.
+              </p>
+            </div>
+          </div>
+
+          <div class="about__block reverse">
+            <div class="about__image">
+              <img
+                src="./assets/img/about-3.jpg"
+                alt="Fotografía de destinos turísticos de España"
+                loading="lazy"
+              />
+            </div>
+            <div class="about__text">
+              <p class="about__paragraph">
+                Creemos que la fotografía es una forma de conectar con el mundo
+                y compartir su belleza con los demás. Ya sea para inspirar
+                viajes, decorar espacios o simplemente disfrutar de la
+                naturaleza, nuestras imágenes están hechas para perdurar y
+                mostrar la riqueza de los paisajes españoles.
+              </p>
+              <a href="#gallery" class="button button-primary">
+                Ver Galería
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE -->
+      <section id="services" class="services section">
+        <div class="services__container">
+          <div class="services__header">
+            <h2 class="section-subtitle">Nuestros Servicios</h2>
+            <p class="section-title">
+              <span>Explorando &</span>
+              <span>Inmortalizando</span>
+            </p>
+            <p class="section__description">
+              La fotografía turística es mi <span class="bold">pasión</span>.
+              Cada viaje por España es una aventura, y cada destino tiene una
+              historia. Capturo la esencia de cada lugar, desde rincones
+              icónicos hasta detalles escondidos, para que puedas
+              <span class="bold">revivir esos momentos</span>.
+            </p>
+            <a href="#contact" class="button button-primary">Contáctanos</a>
+          </div>
+
+          <div class="services__grid">
+            <div class="service__card">
+              <i class="fa-solid fa-camera"></i>
+              <h3>Fotografía de Paisajes</h3>
+              <p>
+                Capturamos la belleza de los paisajes españoles, desde las
+                montañas del norte hasta las playas del sur, en su máximo
+                esplendor.
+              </p>
+            </div>
+
+            <div class="service__card">
+              <i class="fa-solid fa-image"></i>
+              <h3>Venta de Fotografías</h3>
+              <p>
+                Adquiere nuestras imágenes en alta resolución para decorar tus
+                espacios o proyectos. Lleva un pedazo de España a tu hogar.
+              </p>
+            </div>
+
+            <div class="service__card">
+              <i class="fa-solid fa-users"></i>
+              <h3>Talleres y Cursos</h3>
+              <p>
+                Aprende técnicas avanzadas de fotografía de paisajes con
+                nuestros talleres especializados, explorando los rincones más
+                bellos de España.
+              </p>
+            </div>
+
+            <div class="service__card">
+              <i class="fa-solid fa-handshake"></i>
+              <h3>Colaboraciones</h3>
+              <p>
+                Trabajamos con marcas y empresas para crear contenido visual
+                impactante que resalte la belleza de los destinos turísticos
+                españoles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORKS -->
+      <section id="works" class="works section">
+        <div class="works__container">
+          <h2 class="section-subtitle">Últimos proyectos</h2>
+          <h1 class="section-title">Explora España a Través de la Lente</h1>
+
+          <div class="works__text-row">
+            <div class="works__header">
+              <h2 class="works__title">1# Doñana y Picos de Europa</h2>
+              <p class="works__category">Paisajes / Naturaleza</p>
+            </div>
+            <div class="works__description">
+              <p class="works__paragraph">
+                A través de su lente, ACPhotography captura la
+                <span class="bold">impresionante belleza</span> de los paisajes
+                españoles. Desde las montañas del norte hasta las playas del
+                sur, cada imagen es un testimonio de las
+                <span class="bold">maravillas naturales de España</span>,
+                invitando a los espectadores a sumergirse en la
+                <span class="bold">serenidad de cada escena</span>.
+              </p>
+            </div>
+          </div>
+
+          <div class="works__image-row">
+            <img
+              src="./assets/img/work-1.jpg"
+              alt="Picos de Europa"
+              class="works__image"
+            />
+            <img
+              src="./assets/img/work-2.jpg"
+              alt="Doñana"
+              class="works__image"
+            />
+          </div>
+
+          <div class="works__text-row reverse">
+            <div class="works__header">
+              <h2 class="works__title">2# Benidorm y Madrid</h2>
+              <p class="works__category">Ciudades / Gente</p>
+            </div>
+            <div class="works__description">
+              <p class="works__paragraph">
+                A través de la lente de ACPhotography, el Castillo de Almodóvar
+                y el Castillo de Colomares cobran vida en su magnificencia
+                <span class="bold"
+                  >como emblemas de la historia medieval de España</span
+                >. Cada fotografía captura la singularidad de su arquitectura,
+                <span class="bold"
+                  >construcciones que fusionan historia, arte y paisaje</span
+                >, ofreciendo al espectador una experiencia visual que invita a
+                explorar el pasado y la belleza inigualable de estos monumentos
+                emblemáticos.
+              </p>
+            </div>
+          </div>
+
+          <div class="works__image-row">
+            <img
+              src="./assets/img/work-3.jpg"
+              alt="Madrid"
+              class="works__image"
+            />
+            <img
+              src="./assets/img/work-4.jpg"
+              alt="Barcelona"
+              class="works__image"
+            />
+          </div>
+
+          <div class="works__text-row">
+            <div class="works__header">
+              <h2 class="works__title">3# Almodóvar y Colomares</h2>
+              <p class="works__category">Castillos / Historico</p>
+            </div>
+            <div class="works__description">
+              <p class="works__paragraph">
+                Mirando el mundo a través de su lente, ACPhotography encuentra
+                <span class="bold"
+                  >maravillas en las ciudades, las personas y los lugares</span
+                >
+                que descubre en su día a día. Sus fotografías urbanas capturan
+                la esencia de la vida en España, haciendo que el espectador
+                sienta una
+                <span class="bold">profunda conexión con cada escena</span>.
+              </p>
+            </div>
+          </div>
+
+          <div class="works__image-row">
+            <img
+              src="./assets/img/work-5.jpg"
+              alt="Castillo de Almodovar"
+              class="works__image"
+            />
+            <img
+              src="./assets/img/work-6.jpg"
+              alt="Castillo de Colomares"
+              class="works__image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section id="team" class="team section">
+        <div class="team__container">
+          <h2 class="section-subtitle">Nuestro Equipo</h2>
+          <h1 class="section-title">
+            Conoce a los expertos detrás de la lente
+          </h1>
+
+          <div class="team__principal">
+            <div class="team__principal-text">
+              <h3 class="team__principal-name">Ana Pérez</h3>
+              <p class="team__principal-role">Fotógrafa Principal</p>
+              <p class="team__principal-description">
+                Con más de 10 años de experiencia, Ana es la mente creativa
+                detrás de cada fotografía. Su pasión por capturar la belleza de
+                los paisajes españoles ha llevado a ACPhotography a nuevos
+                horizontes. Ganadora del premio Nacional de Fotografía de
+                Paisaje en 2020, su trabajo se caracteriza por una atención
+                meticulosa a la composición y la luz natural.
+              </p>
+              <div class="team__quote">
+                <p class="team__quote-text">
+                  "La verdadera fotografía no se toma, se hace. Cada imagen es
+                  un diálogo entre el paisaje y el alma del fotógrafo."
+                </p>
+                <span class="team__quote-author">- Ana Pérez</span>
+              </div>
+              <div class="team__principal-social">
+                <a href="#" class="team__social-link" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="team__social-link" aria-label="Twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#" class="team__social-link" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+            <div class="team__principal-image">
+              <img
+                src="./assets/img/team-1.jpg"
+                alt="Ana Pérez"
+                loading="lazy"
+                class="team__principal-img"
+              />
+            </div>
+          </div>
+          <div class="team__grid">
+            <div class="team__card">
+              <div class="team__image">
+                <img
+                  src="./assets/img/team-2.jpg"
+                  alt="Carlos Gómez"
+                  loading="lazy"
+                  class="team__img"
+                />
+              </div>
+              <div class="team__info">
+                <h3 class="team__name">Carlos Gómez</h3>
+                <p class="team__role">Editor de Fotografía</p>
+                <div class="team__social">
+                  <a href="#" class="team__social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="#" class="team__social-link" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#" class="team__social-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="team__card">
+              <div class="team__image">
+                <img
+                  src="./assets/img/team-3.jpg"
+                  alt="María López"
+                  loading="lazy"
+                  class="team__img"
+                />
+              </div>
+              <div class="team__info">
+                <h3 class="team__name">María López</h3>
+                <p class="team__role">Especialista en Paisajes</p>
+                <div class="team__social">
+                  <a href="#" class="team__social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="#" class="team__social-link" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#" class="team__social-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="team__card">
+              <div class="team__image">
+                <img
+                  src="./assets/img/team-4.jpg"
+                  alt="Javier Ruiz"
+                  loading="lazy"
+                  class="team__img"
+                />
+              </div>
+              <div class="team__info">
+                <h3 class="team__name">Javier Ruiz</h3>
+                <p class="team__role">Fotógrafo de Viajes</p>
+                <div class="team__social">
+                  <a href="#" class="team__social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="#" class="team__social-link" aria-label="Twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="#" class="team__social-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section id="testimonials" class="testimonials section">
+        <div class="testimonials__container">
+          <h2 class="section-subtitle">Testimonios</h2>
+          <h1 class="section-title">Lo que dicen nuestros clientes</h1>
+          <div class="testimonials__grid">
+            <div class="testimonial__card">
+              <div class="testimonial__author">
+                <img
+                  src="./assets/img/testimonial-1.jpg"
+                  alt="María González"
+                /><span class="line"></span
+                ><span class="testimonial__author__name">María González</span>
+              </div>
+              <p class="testimonial__text">
+                "Las fotografías de ACPhotography capturan la esencia de cada
+                lugar de una manera única. ¡Increíble trabajo!"
+              </p>
+            </div>
+
+            <div class="testimonial__card">
+              <div class="testimonial__author">
+                <img
+                  src="./assets/img/testimonial-2.jpg"
+                  alt="Carlos Ramírez"
+                />
+                <span class="line"></span>
+                <span class="testimonial__author__name">Carlos Ramírez</span>
+              </div>
+              <p class="testimonial__text">
+                "Muy profesional y talentoso. Cada fotografía transmite una
+                historia única. ¡Totalmente recomendado!"
+              </p>
+            </div>
+
+            <div class="testimonial__card">
+              <div class="testimonial__author">
+                <img src="./assets/img/testimonial-3.jpg" alt="Ana López" />
+                <span class="line"></span>
+                <span class="testimonial__author__name">Ana López</span>
+              </div>
+              <p class="testimonial__text">
+                "Increíble experiencia, las fotos quedaron hermosas. Capturaron
+                la esencia de cada momento."
+              </p>
+            </div>
+
+            <div class="testimonial__card">
+              <div class="testimonial__author">
+                <img src="./assets/img/testimonial-4.jpg" alt="Pedro Sánchez" />
+                <span class="line"></span>
+                <span class="testimonial__author__name">Pedro Sánchez</span>
+              </div>
+              <p class="testimonial__text">
+                "La calidad de las fotos es impresionante. El equipo de
+                ACPhotography sabe cómo hacer magia con la cámara."
+              </p>
+            </div>
+
+            <div class="testimonial__card">
+              <div class="testimonial__author">
+                <img
+                  src="./assets/img/testimonial-5.jpg"
+                  alt="Laura Martínez"
+                />
+                <span class="line"></span>
+                <span class="testimonial__author__name">Laura Martínez</span>
+              </div>
+              <p class="testimonial__text">
+                "No hay mejor equipo para fotografía profesional. Cada imagen es
+                simplemente perfecta."
+              </p>
+            </div>
+
+            <div class="testimonial__card">
+              <div class="testimonial__author">
+                <img src="./assets/img/testimonial-6.jpg" alt="Ricardo Gómez" />
+                <span class="line"></span>
+                <span class="testimonial__author__name">Ricardo Gómez</span>
+              </div>
+              <p class="testimonial__text">
+                "El trabajo de ACPhotography habla por sí solo. Imágenes con una
+                calidad y detalle impresionante."
+              </p>
+            </div>
+          </div>
+          <div class="testimonial__buttons">
+            <div class="testimonial__button" id="testimonial__prev">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="testimonial__button" id="testimonial__next">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery section">
+        <div class="gallery__container">
+          <h2 class="section-subtitle">Galería</h2>
+          <h1 class="section-title">Fotos más destacadas</h1>
+
+          <div class="gallery__grid" id="galleryGrid">
+            <div class="grid__sizer"></div>
+          </div>
+
+          <div class="gallery__load-more">
+            <div class="button button-primary" id="loadMore">
+              Cargar más fotos
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div class="contact__container">
+          <h2 class="section-subtitle">Contacto</h2>
+          <h1 class="section-title">¿Listo para trabajar juntos?</h1>
+
+          <div class="contact__grid">
+            <div class="contact__image-container">
+              <img
+                src="./assets/img/contact.jpg"
+                alt="Imagen de contacto"
+                class="contact__image"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="contact__content">
+              <div class="contact__form-container">
+                <form class="contact__form">
+                  <h2 class="contact__title">Ponte en contacto</h2>
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Nombre"
+                      required
+                    />
+                  </div>
+                  <div class="form__group">
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Correo electrónico"
+                      required
+                    />
+                  </div>
+                  <div class="form__group">
+                    <input
+                      type="text"
+                      id="subject"
+                      name="subject"
+                      placeholder="Asunto"
+                      required
+                    />
+                  </div>
+                  <div class="form__group">
+                    <textarea
+                      id="message"
+                      name="message"
+                      placeholder="Mensaje"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="button button-primary">Enviar mensaje</div>
+                </form>
+              </div>
+
+              <div class="contact__info">
+                <h2 class="contact__title">Información de contacto</h2>
+                <div class="contact__info-item">
+                  <i class="fa-solid fa-envelope"></i>
+                  <p>info@acphotography.com</p>
+                </div>
+                <div class="contact__info-item">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>+34 123 456 789</p>
+                </div>
+                <div class="contact__info-item">
+                  <i class="fa-solid fa-map-marker-alt"></i>
+                  <p>Madrid, España</p>
+                </div>
+                <div class="contact__info-item">
+                  <i class="fa-solid fa-clock"></i>
+                  <p>Lunes a Viernes: 9:00 - 18:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.496317404104!2d-3.703790384603946!3d40.41677547936467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e9a3a5f81%3A0x9c7d5a1b3b0b0b0b!2sMadrid%2C%20Espa%C3%B1a!5e0!3m2!1ses!2ses!4v1633020000000!5m2!1ses!2ses"
+              width="100%"
+              height="400"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              aria-label="Mapa de ubicación"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="faq section">
+        <div class="faq__container">
+          <h2 class="section-subtitle">FAQ</h2>
+          <h1 class="section-title">Preguntas frecuentes</h1>
+          <div class="faq__accordion">
+            <div class="faq__item">
+              <div class="faq__question__container">
+                <span class="faq__number__paragraph">01</span
+                ><i class="fa-solid fa-arrow-down"></i
+                ><span class="faq__question"
+                  >¿Cómo puedo comprar una fotografía?</span
+                >
+              </div>
+              <div class="faq__answer">
+                <p>
+                  Puedes adquirir nuestras fotografías a través de nuestra
+                  tienda online o contactándonos directamente.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__question__container">
+                <span class="faq__number__paragraph">02</span
+                ><i class="fa-solid fa-arrow-down"></i
+                ><span class="faq__question"
+                  >¿Ofrecen servicios personalizados?</span
+                >
+              </div>
+              <div class="faq__answer">
+                <p>
+                  Sí, trabajamos con clientes para crear proyectos
+                  personalizados según sus necesidades.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__question__container">
+                <span class="faq__number__paragraph">03</span>
+                <i class="fa-solid fa-arrow-down"></i>
+                <span class="faq__question"
+                  >¿Qué formatos de fotografía ofrecen?</span
+                >
+              </div>
+              <div class="faq__answer">
+                <p>
+                  Ofrecemos fotografías en formato digital (JPEG, PNG) y también
+                  en impresiones de alta calidad en varios tamaños.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__question__container">
+                <span class="faq__number__paragraph">04</span>
+                <i class="fa-solid fa-arrow-down"></i>
+                <span class="faq__question"
+                  >¿Hacen envíos internacionales?</span
+                >
+              </div>
+              <div class="faq__answer">
+                <p>
+                  Sí, realizamos envíos a todo el mundo. Los costos y tiempos de
+                  entrega varían según la ubicación.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__question__container">
+                <span class="faq__number__paragraph">05</span>
+                <i class="fa-solid fa-arrow-down"></i>
+                <span class="faq__question"
+                  >¿Puedo usar las fotografías para fines comerciales?</span
+                >
+              </div>
+              <div class="faq__answer">
+                <p>
+                  Sí, ofrecemos licencias para uso comercial. Contáctanos para
+                  más detalles sobre los términos y condiciones.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <div class="faq__question__container">
+                <span class="faq__number__paragraph">06</span>
+                <i class="fa-solid fa-arrow-down"></i>
+                <span class="faq__question"
+                  >¿Cómo puedo participar en los talleres de fotografía?</span
+                >
+              </div>
+              <div class="faq__answer">
+                <p>
+                  Puedes inscribirte en nuestros talleres a través de nuestra
+                  página web o contactándonos directamente. Te enviaremos toda
+                  la información necesaria.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer section">
+        <div class="footer__container">
+          <div class="footer__description">
+            <div class="footer__title">
+              <h2>Nosotros somos</h2>
+            </div>
+            <p class="footer__text">
+              Especialistas en fotografía de paisajes y destinos turísticos
+              españoles. Con más de 10 años de experiencia, capturamos la
+              esencia de cada rincón de España para crear arte visual que
+              inspire viajes y conecte con la naturaleza.
+            </p>
+          </div>
+
+          <div class="footer__brand">
+            <a href="#" class="footer__logo">
+              <img
+                src="./assets/img/logo.png"
+                alt="ACPhotography Logo"
+                class="footer__logo-img"
+              />
+            </a>
+          </div>
+
+          <div class="footer__contact">
+            <div class="footer__title">
+              <h2>Mantenerse en contacto</h2>
+            </div>
+            <p class="footer__newsletter-text">
+              Suscríbete para recibir nuestras últimas fotos, ofertas especiales
+              y novedades.
+            </p>
+            <form class="footer__newsletter">
+              <div class="footer__form-group">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="footer__input"
+                  required
+                />
+                <div type="submit" class="button button-primary">
+                  Suscribirse
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+              </div>
+            </form>
+
+            <div class="footer__contact-info">
+              <a href="tel:+34123456789" class="footer__link reverse">
+                <span>+34 123 456 789</span><i class="fa-solid fa-phone"></i>
+              </a>
+              <a
+                href="mailto:info@acphotography.com"
+                class="footer__link reverse"
+              >
+                <span>info@acphotography.com</span
+                ><i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Facebook">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="footer__social-link" aria-label="Pinterest">
+                <i class="fa-brands fa-pinterest"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="sub__footer">
+          <div class="footer__copyright">
+            <p>&copy; 2023 ACPhotography. Todos los derechos reservados.</p>
+            <p class="footer__legal">
+              <a href="#" class="footer__link">Política de privacidad</a> |
+              <a href="#" class="footer__link">Términos y condiciones</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="./assets/js/sidebar.js"></script>
+  <script src="./assets/js/initMansory.js"></script>
+  <script src="./assets/js/sliderTestimonials.js"></script>
+  <script src="./assets/js/faqDeploy.js"></script>
+</html>
